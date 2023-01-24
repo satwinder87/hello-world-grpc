@@ -1,7 +1,9 @@
 package com.learning;
 
 import com.learning.grpc.HelloServiceGrpc;
+import net.devh.boot.grpc.server.service.GrpcService;
 
+@GrpcService
 public class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBase {
 
     @Override
